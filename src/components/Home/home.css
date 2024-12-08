@@ -1,0 +1,41 @@
+.main {
+    display:flex;
+    justify-content: flex-end;
+    height:100vh;
+    width:100vw;
+}
+
+
+
+.top{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+
+}
+
+p{
+    text-align: center;
+    color:white;
+}
+
+.pfp {
+    width:60vw;
+}
+
+.pfp .pic{
+    margin-top: 5vh;
+    margin-left: 5vw;   
+    height: 25vh;  
+    width:15vw;
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+
+.intro{
+    width:40vw;
+    
+}
+
+
