@@ -1,41 +1,174 @@
-.main {
-    display:flex;
-    justify-content: flex-end;
-    height:100vh;
-    width:100vw;
+
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 
 
-.top{
-    height: 50vh;
-    width: 100vw;
+.main{
+    width:100%;
+    height:100%;
     display: flex;
 
 }
 
-p{
-    text-align: center;
-    color:white;
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
-.pfp {
-    width:60vw;
+.top{
+    width:100%;
+    height:40%;
+    display:flex;
 }
 
-.pfp .pic{
-    margin-top: 5vh;
-    margin-left: 5vw;   
-    height: 25vh;  
-    width:15vw;
-    border-radius: 50%; 
-    object-fit: cover; 
+.top-left{
+    width: 50%;
 }
 
 
-.intro{
-    width:40vw;
+.pfp-container{
+    padding-top: 100px;
+    padding-left: 20%;
+
+    place-items: center;
+}
+
+.circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    grid-area: 1 / 1;
+
+    animation: fade-down 3s;
+
+}
+
+
+
+.icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+    animation: fade-up 3s;
     
 }
 
+.linkdin {
+    margin-left:20%;
+}
 
+.git{
+    margin-left:10%;
+    width:60px;
+}
+
+.resume{
+    margin-left:10%;
+}
+
+@keyframes fade-up {
+    0%{
+        opacity: 0%;
+        transform: translateY(50px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+
+@keyframes fade-down {
+    0%{
+        opacity: 0%;
+        transform: translateY(-50px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+
+
+.top-right{
+    padding-top:100px;
+    padding-left: 20%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+}
+
+
+
+.typing-effect{
+    overflow:hidden;
+    display: inline-block;
+}
+
+.typing-effect span {
+    opacity: 0;
+    animation: typing 1s steps(1) forwards;
+
+}
+
+@keyframes typing {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.typing-effect span:nth-child(1) {animation-delay: .1s;}
+.typing-effect span:nth-child(2) {animation-delay: .3s;}
+.typing-effect span:nth-child(3) {animation-delay: .4s;}
+.typing-effect span:nth-child(4) {animation-delay: .5s;}
+.typing-effect span:nth-child(5) {animation-delay: .6s;}
+.typing-effect span:nth-child(6) {animation-delay: .7s;}
+.typing-effect span:nth-child(7) {animation-delay: .8s;}
+.typing-effect span:nth-child(8) {animation-delay: .9s;}
+.typing-effect span:nth-child(9) {animation-delay: 1s;}
+.typing-effect span:nth-child(10) {animation-delay: 1.2s;}
+.typing-effect span:nth-child(11) {animation-delay: 1.3s;}
+.typing-effect span:nth-child(12) {animation-delay: 1.4s;}
+.typing-effect span:nth-child(13) {animation-delay: 1.6s;}
+
+.typing-effect span:nth-child(14) {animation-delay: 1.7s;}
+.typing-effect span:nth-child(15) {animation-delay: 1.8s;}
+.typing-effect span:nth-child(16) {animation-delay: 1.9s;}
+.typing-effect span:nth-child(17) {animation-delay: 2s;}
+.typing-effect span:nth-child(18) {animation-delay: 2.1s;}
+.typing-effect span:nth-child(19) {animation-delay: 2.2s;}
+.typing-effect span:nth-child(20) {animation-delay: 2.4s;}
+.typing-effect span:nth-child(21) {animation-delay: 2.5s;}
+.typing-effect span:nth-child(22) {animation-delay: 2.6s;}
+.typing-effect span:nth-child(23) {animation-delay: 2.7s;}
+.typing-effect span:nth-child(24) {animation-delay: 2.8s;}
+.typing-effect span:nth-child(25) {animation-delay: 2.9s;}
+.typing-effect span:nth-child(26) {animation-delay: 3.1s;}
+.typing-effect span:nth-child(27) {animation-delay: 3.2s;}
+.typing-effect span:nth-child(28) {animation-delay: 3.4s;}
+.typing-effect span:nth-child(29) {animation-delay: 3.5s;}
+.typing-effect span:nth-child(30) {animation-delay: 3.6s;}
+.typing-effect span:nth-child(31) {animation-delay: 3.8s;}
+.typing-effect span:nth-child(32) {animation-delay: 3.9s;}
+.typing-effect span:nth-child(33) {animation-delay: 4s;}
+.typing-effect span:nth-child(34) {animation-delay: 4.1s;}
+.typing-effect span:nth-child(35) {animation-delay: 4.2s;}
