@@ -11,7 +11,7 @@ html {
 .main{
     width:100%;
     height:100%;
-    display: flex;
+    display: block;
 
 }
 
@@ -37,7 +37,7 @@ html {
 
 .pfp-container{
     padding-top: 100px;
-    padding-left: 20%;
+    padding-left: 40%;
 
     place-items: center;
 }
@@ -54,18 +54,30 @@ html {
 }
 
 
+.links{
+
+    align-items: center;
+    margin: auto;
+
+}
 
 .icon{
     height: 50px;
     width: 50px;
     border-radius: 50%;
-
     animation: fade-up 3s;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
     
 }
 
+.icon:hover{
+    transform:scale(1.1);
+    transform: translateY(-10px);
+}
+
 .linkdin {
-    margin-left:20%;
+    margin-left:40%;
 }
 
 .git{
@@ -76,6 +88,9 @@ html {
 .resume{
     margin-left:10%;
 }
+
+
+
 
 @keyframes fade-up {
     0%{
@@ -104,8 +119,7 @@ html {
 
 .top-right{
     padding-top:100px;
-    padding-left: 20%;
-
+    padding-left: 10%;
     align-items: center;
     justify-content: center;
 }
@@ -172,3 +186,66 @@ h1{
 .typing-effect span:nth-child(33) {animation-delay: 4s;}
 .typing-effect span:nth-child(34) {animation-delay: 4.1s;}
 .typing-effect span:nth-child(35) {animation-delay: 4.2s;}
+
+
+.emoji {
+    animation: fade-up 3s;
+
+}
+
+
+
+
+
+
+.bottom{
+    height:60%;
+    width:80%;
+    margin-left:10%;
+    margin-top:190px;
+    margin-right: 10%;
+
+}
+
+.projectGrid{
+    animation: fade-up 3s;
+
+    display: block;
+    
+}
+
+
+.project{
+    height:410px;
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.cover{
+    height:400px;
+    width: 700px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-radius: 40px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project .img{
+    border-radius: 20px;
+}
+
+
+.one:hover{
+    background-color: red;
+    transform:translateX(-5px) translateY(-5px);
+}
+
+
+.two:hover{
+    background-color: blueviolet;
+    transform:translateX(-5px) translateY(-5px);
+}
+

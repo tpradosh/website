@@ -5,6 +5,7 @@ import pfpImage from '../images/bird.webp';
 import linkdin from '../images/linkdin.png';
 import github from '../images/git.png';
 import resume from '../images/resume.png';
+import test from '../images/test.png';
 
 
 function Home (props){
@@ -17,9 +18,15 @@ function Home (props){
                         <img class = "pic circle" src = {pfpImage} alt=""></img>
                     </div>
                     <div className = "links">
-                        <img src = {linkdin} class = "linkdin icon"></img>
-                        <img src = {github} class = "git icon"></img>
-                        <img src = {resume} class = "resume icon"></img>
+                        <a href = "https://www.linkedin.com/in/pradosht/">
+                            <img src = {linkdin} class = "linkdin icon"></img>
+                        </a>
+                        <a href = "https://github.com/tpradosh/">
+                            <img src = {github} class = "git icon"></img>
+                        </a>
+                        <a href = "https://drive.google.com/file/d/1UjXCPghZybnWpaoWn6W2ClqCwBRkqcnA/view?usp=sharing">
+                            <img src = {resume} class = "resume icon"></img>
+                        </a>
 
                     </div>
                 </div>
@@ -62,6 +69,34 @@ function Home (props){
                         <span>e</span>
                         <span>!</span>
                     </h1>
+                </div>
+            </div>
+
+
+            <div className = "bottom">
+                <div className = "projectGrid">
+                    <h1>💻 My Projects!</h1>
+                    <div className = "project">
+                        <img className = "cover one" src = {test}>
+                            
+                        </img>
+                        <h1>Hello</h1>
+                    </div>
+
+                    <div className = "project">
+                        <img className = "cover two" src = {test}>
+                            
+                        </img>
+                        <h1>Hello</h1>
+                    </div>
+
+                    <div className = "project three cover"></div>
+                        <div className = "project three bot"></div>
+
+                    <div className = "project four cover"></div>
+                        <div className = "project four bot"></div>
+
+
                 </div>
             </div>
 
