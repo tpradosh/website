@@ -75,18 +75,23 @@ function Home (props){
 
             <div className = "bottom">
                 <div className = "projectGrid">
-                    <h1>💻 My Projects!</h1>
+                    <div className = "typing">
+                        <h1>💻 My Projects!</h1>
+                    </div>
                     <div className = "project">
-                        <img className = "cover one" src = {test}>
-                            
-                        </img>
-                        <h1>Hello</h1>
+                        <a href = "https://github.com/setripper/ZotNostic">
+                            <img className = "cover one" src = {test}></img>
+                        </a>
+                        <div className = "projecttext">
+                            <h1 className = "zotnostic">ZOTNostic</h1>
+                            <p>ZOTNostic is a </p>
+                        </div>
                     </div>
 
                     <div className = "project">
-                        <img className = "cover two" src = {test}>
-                            
-                        </img>
+                        <a href = "https://github.com/tpradosh/tpradosh.github.io">
+                            <img className = "cover two" src = {test}></img>
+                        </a>
                         <h1>Hello</h1>
                     </div>
 
