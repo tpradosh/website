@@ -92,7 +92,10 @@ function Home (props){
                         <a href = "https://github.com/tpradosh/tpradosh.github.io">
                             <img className = "cover two" src = {test}></img>
                         </a>
-                        <h1>Hello</h1>
+                        <div className = "projecttext">
+                            <h1 className = "website">Portfolio Website</h1>
+                            <p>ZOTNostic is a </p>
+                        </div>
                     </div>
 
                     <div className = "project three cover"></div>
